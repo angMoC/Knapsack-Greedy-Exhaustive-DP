@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="JP1">
+  <Parameters>
+    <Parameter id="15" name="C" type="1">
+      <values>
+        <value>C1</value>
+        <value>C2</value>
+        <value>C3</value>
+        <value>C4</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="16" name="V" type="1">
+      <values>
+        <value>V1</value>
+        <value>V2</value>
+        <value>V3</value>
+        <value>V4</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="17" name="P" type="1">
+      <values>
+        <value>P1</value>
+        <value>P2</value>
+        <value>P3</value>
+        <value>P4</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="18" name="S" type="1">
+      <values>
+        <value>S1</value>
+        <value>S2</value>
+        <value>S3</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="19" name="L" type="1">
+      <values>
+        <value>L1</value>
+        <value>L2</value>
+        <value>L3</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(C=&quot;C1&quot;) =&gt; ((P != &quot;P1&quot; &amp;&amp; P != &quot;P2&quot;)) ">
+      <Parameters>
+        <Parameter name="C" />
+        <Parameter name="P" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(C=&quot;C1&quot;) =&gt; (S != &quot;S1&quot;)">
+      <Parameters>
+        <Parameter name="C" />
+        <Parameter name="S" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>C1</Value>
+      <Value>V1</Value>
+      <Value>P3</Value>
+      <Value>S2</Value>
+      <Value>L2</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>C1</Value>
+      <Value>V2</Value>
+      <Value>P4</Value>
+      <Value>S3</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>C1</Value>
+      <Value>V3</Value>
+      <Value>P3</Value>
+      <Value>S3</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>C1</Value>
+      <Value>V4</Value>
+      <Value>P4</Value>
+      <Value>S2</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>C2</Value>
+      <Value>V1</Value>
+      <Value>P1</Value>
+      <Value>S1</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>C2</Value>
+      <Value>V2</Value>
+      <Value>P2</Value>
+      <Value>S2</Value>
+      <Value>L2</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>C2</Value>
+      <Value>V3</Value>
+      <Value>P4</Value>
+      <Value>S1</Value>
+      <Value>L2</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>C2</Value>
+      <Value>V4</Value>
+      <Value>P3</Value>
+      <Value>S3</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="8">
+      <Value>9</Value>
+      <Value>C3</Value>
+      <Value>V1</Value>
+      <Value>P2</Value>
+      <Value>S3</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="9">
+      <Value>10</Value>
+      <Value>C3</Value>
+      <Value>V2</Value>
+      <Value>P1</Value>
+      <Value>S1</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="10">
+      <Value>11</Value>
+      <Value>C3</Value>
+      <Value>V3</Value>
+      <Value>P2</Value>
+      <Value>S2</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="11">
+      <Value>12</Value>
+      <Value>C3</Value>
+      <Value>V4</Value>
+      <Value>P1</Value>
+      <Value>S1</Value>
+      <Value>L2</Value>
+    </Testcase>
+    <Testcase TCNo="12">
+      <Value>13</Value>
+      <Value>C4</Value>
+      <Value>V1</Value>
+      <Value>P4</Value>
+      <Value>S2</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="13">
+      <Value>14</Value>
+      <Value>C4</Value>
+      <Value>V2</Value>
+      <Value>P3</Value>
+      <Value>S1</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="14">
+      <Value>15</Value>
+      <Value>C4</Value>
+      <Value>V3</Value>
+      <Value>P1</Value>
+      <Value>S3</Value>
+      <Value>L2</Value>
+    </Testcase>
+    <Testcase TCNo="15">
+      <Value>16</Value>
+      <Value>C4</Value>
+      <Value>V4</Value>
+      <Value>P2</Value>
+      <Value>S1</Value>
+      <Value>L1</Value>
+    </Testcase>
+    <Testcase TCNo="16">
+      <Value>17</Value>
+      <Value>C3</Value>
+      <Value>V4</Value>
+      <Value>P3</Value>
+      <Value>S2</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="17">
+      <Value>18</Value>
+      <Value>C3</Value>
+      <Value>V3</Value>
+      <Value>P4</Value>
+      <Value>S3</Value>
+      <Value>L3</Value>
+    </Testcase>
+    <Testcase TCNo="18">
+      <Value>19</Value>
+      <Value>C2</Value>
+      <Value>V1</Value>
+      <Value>P1</Value>
+      <Value>S2</Value>
+      <Value>L1</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>C</Value>
+    <Value>V</Value>
+    <Value>P</Value>
+    <Value>S</Value>
+    <Value>L</Value>
+  </Header>
+  <Stat-Data>
+    <ExecutionTime>0.051</ExecutionTime>
+    <MaxDomainSize>4</MaxDomainSize>
+    <MinDomainSize>3</MinDomainSize>
+    <TotalNoOfCombination>126</TotalNoOfCombination>
+    <TotalNoOfTests>19</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+

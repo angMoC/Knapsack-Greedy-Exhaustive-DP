@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<System name="JP2">
+  <Parameters>
+    <Parameter id="0" name="C" type="1">
+      <values>
+        <value>C1</value>
+        <value>C2</value>
+        <value>C3</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="1" name="L" type="1">
+      <values>
+        <value>L1</value>
+        <value>L2</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="2" name="V" type="1">
+      <values>
+        <value>V1</value>
+        <value>V2</value>
+        <value>V3</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="3" name="P" type="1">
+      <values>
+        <value>P1</value>
+        <value>P2</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+    <Parameter id="4" name="S" type="1">
+      <values>
+        <value>S1</value>
+        <value>S2</value>
+      </values>
+      <basechoices>
+        <basechoice />
+      </basechoices>
+    </Parameter>
+  </Parameters>
+  <OutputParameters />
+  <Relations />
+  <Constraints>
+    <Constraint text="(C=&quot;C1&quot;) =&gt; ((P != &quot;P1&quot; &amp;&amp; P != &quot;P2&quot;))">
+      <Parameters>
+        <Parameter name="C" />
+        <Parameter name="P" />
+      </Parameters>
+    </Constraint>
+    <Constraint text="(C=&quot;C1&quot;) =&gt; (S != &quot;S1&quot;)">
+      <Parameters>
+        <Parameter name="C" />
+        <Parameter name="S" />
+      </Parameters>
+    </Constraint>
+  </Constraints>
+  <Testset doi="2">
+    <Testcase TCNo="0">
+      <Value>1</Value>
+      <Value>C2</Value>
+      <Value>L2</Value>
+      <Value>V1</Value>
+      <Value>P2</Value>
+      <Value>S2</Value>
+    </Testcase>
+    <Testcase TCNo="1">
+      <Value>2</Value>
+      <Value>C2</Value>
+      <Value>L1</Value>
+      <Value>V2</Value>
+      <Value>P1</Value>
+      <Value>S1</Value>
+    </Testcase>
+    <Testcase TCNo="2">
+      <Value>3</Value>
+      <Value>C2</Value>
+      <Value>L2</Value>
+      <Value>V3</Value>
+      <Value>P1</Value>
+      <Value>S2</Value>
+    </Testcase>
+    <Testcase TCNo="3">
+      <Value>4</Value>
+      <Value>C3</Value>
+      <Value>L1</Value>
+      <Value>V1</Value>
+      <Value>P2</Value>
+      <Value>S1</Value>
+    </Testcase>
+    <Testcase TCNo="4">
+      <Value>5</Value>
+      <Value>C3</Value>
+      <Value>L2</Value>
+      <Value>V2</Value>
+      <Value>P1</Value>
+      <Value>S2</Value>
+    </Testcase>
+    <Testcase TCNo="5">
+      <Value>6</Value>
+      <Value>C3</Value>
+      <Value>L1</Value>
+      <Value>V3</Value>
+      <Value>P2</Value>
+      <Value>S1</Value>
+    </Testcase>
+    <Testcase TCNo="6">
+      <Value>7</Value>
+      <Value>C2</Value>
+      <Value>L2</Value>
+      <Value>V1</Value>
+      <Value>P1</Value>
+      <Value>S1</Value>
+    </Testcase>
+    <Testcase TCNo="7">
+      <Value>8</Value>
+      <Value>C2</Value>
+      <Value>L1</Value>
+      <Value>V2</Value>
+      <Value>P2</Value>
+      <Value>S2</Value>
+    </Testcase>
+  </Testset>
+  <Header>
+    <Value />
+    <Value>C</Value>
+    <Value>L</Value>
+    <Value>V</Value>
+    <Value>P</Value>
+    <Value>S</Value>
+  </Header>
+  <Graph-Data>
+    <Value>0.25641027</Value>
+    <Value>0.4871795</Value>
+    <Value>0.61538464</Value>
+    <Value>0.7692308</Value>
+    <Value>0.8717949</Value>
+    <Value>0.94871795</Value>
+    <Value>0.974359</Value>
+    <Value>1.0</Value>
+  </Graph-Data>
+  <Stat-Data>
+    <ExecutionTime>0.048</ExecutionTime>
+    <MaxDomainSize>3</MaxDomainSize>
+    <MinDomainSize>2</MinDomainSize>
+    <TotalNoOfCombination>48</TotalNoOfCombination>
+    <TotalNoOfTests>8</TotalNoOfTests>
+    <Algorithm>IPOG</Algorithm>
+  </Stat-Data>
+</System>
+
