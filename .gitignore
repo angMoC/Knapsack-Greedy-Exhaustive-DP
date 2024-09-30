@@ -1,14 +1,14 @@
-# Ignorar carpetas generadas por IntelliJ
+# Ignorar archivos de configuración específicos de IDE
 .idea/
 *.iml
 out/
 
-# Ignorar archivos compilados
-*.class
-*.jar
+# Ignorar compilados de Python
+*.pyc
+__pycache__/
 
-# Archivos de sistema comunes
-.DS_Store
-Thumbs.db
+# Ignorar la carpeta venv
+venv/
 
+# Ignorar pdfs
 *.pdf
