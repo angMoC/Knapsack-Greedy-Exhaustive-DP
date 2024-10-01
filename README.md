@@ -5,7 +5,7 @@ Este proyecto implementa y evalúa diferentes algoritmos para resolver el proble
 incluyendo búsqueda exhaustiva, búsqueda con poda, un algoritmo voraz y una solución basada en programación dinámica. 
 
 Este proyecto es de carácter académico y fue desarrollado como parte del currículo de aprendizaje de pruebas de software. Puede 
-encontrarse documentación más detalladas del proyecto en DOCUMENTACION.md, incluyendo comparativas entre las soluciones y 
+encontrarse documentación más detalladas del proyecto en docs/Documentacion_KapsackProblem, incluyendo comparativas entre las soluciones y 
 una explicación exhaustiva acerca de los juegos de prueba generados con ACTS (Automated Combinatorial Testing for Software).
 
 
